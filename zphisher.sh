@@ -3,7 +3,7 @@
 ##   Zphisher 	: 	Automated Phishing Tool
 ##   Author 	: 	AMALIO 
 ##   Version 	: 	2.3
-##   Github 	: 	https://github.com/htr-tech
+##   Github 	: 	https://github.com/zetahourse/
 
 ##   THANKS TO :
 ##   TAHMID RAYAT - https://github.com/htr-tech
@@ -163,7 +163,7 @@ banner() {
 		${ORANGE}      | |                                
 		${ORANGE}      |_|                ${RED}Version : 2.3
 
-		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by htr-tech (tahmid.rayat)${WHITE}
+		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by zhorse (tahmid.rayat)${WHITE}
 	EOF
 }
 
