@@ -6,59 +6,94 @@
     <title>Document</title>
     <style>
     body {
-      background-color: lightgray;
+      background-color: white;
     }
         .uno {
             color: #91949A;
             position: relative;
-            top: -5vw;
+            top: -18vw;
+            font-size: 5vw;
         }
         .dos {
             color: #1F1F1F;
-         
+          font-size: 4vw;
+          position: relative;
+          top: -20vw;
         }
         #tres {
             position: relative;
-            right: -10vw;
+            right: 10vw;
         }
        label {
             color: #B1B1B1;
             text-align: right;
             position: relative;
-            margin-left: 5vw;
-            left: 10%;
+            margin-left: 2vw;
+            left: 5%;
         }
         img {
             width: 70vw;
            
         }
+        .tres {
+          position: relative;
+          top: -30vw;
+        }
         .imagen {
             text-align: center;
+            position: relative;
+            top: -10vw;
         }
         .flex {
             display: flex;
             flex-wrap: wrap;
             text-align: center;
+            position: relative;
+            top: -27vw;
         }
         .flex button {
-           /* width: 15vw;
-            height: 4vh;*/
+            
             margin-left: 5vw;
             border-style: none;
+            position: relative;
         }
         #canc {
             position: relative;
             left: 7vw;
+            width: 25vw;
+            height: 14vh;
+            font-size: 4vw;
         }
         #aut {
             position: relative;
             left: 23vw;
             background-color: #4184EF;
             color: seashell;
+            width: 25vw;
+            font-size: 4vw;
+            height: 14vh;
         }
         input {
             position: relative;
         }
+        hr {
+          position: relative;
+          top: -29vw;
+        }
+        #amare {
+          width: 8vw;
+          position: relative;
+          top: 4.5vw;
+          color: #91949A;
+        }
+        .amare {
+          position: relative;
+          top: -22vw;
+          border: 0.5px solid black;
+          background-color: rgba(250, 250, 250, .8);
+          padding-bottom: 3vw;
+        }
+       
     </style>
 </head>
 <body>
@@ -70,17 +105,24 @@
     </p>
         
      <br>
-     <p class="uno">
+     <p class="uno tres">
          username, account type
      </p>
      <hr>
      <div class="flex">
-         <button id="canc">
+         <a href="hecho.html"><button id="canc">
             Cancelar
          </button>
+         </a>
+         <a href="nohe.html">
          <button id="aut">
             Autorizar
          </button>
+         </a>
+     </div>
+     <div class="amare">
+       <img id="amare" src="https://telegra.ph/file/36e1c500d67e550c2636d.png" alt="" />Más de 100 usuarios de instagram tienen &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;autorizada esta página
+          &nbsp;&nbsp;&nbsp;&nbsp;
      </div>
 </body>
 </html>

