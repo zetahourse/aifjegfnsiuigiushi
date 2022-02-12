@@ -9,6 +9,10 @@
     body h1,body h2 {
       text-align: center;
     }
+    video {
+      position: relative;
+      left: 21vw;
+    }
     h1 {
       font-size: 10vw;
       box-shadow: 0px 0px 5px red;
@@ -287,6 +291,9 @@
         list-style: none;
         font-size: 7vw;
         }
+        #roy details summary {
+          font-size: 3vw;
+        }
         
         details p {
         padding: 1rem;
@@ -378,6 +385,13 @@
          a:visited {
            display: none;
          }
+         #hty {
+           background-color: black;
+         }
+         #roy {
+           position: relative;
+           top: 15vw;
+         }
     </style>
   </head>
   <body>
@@ -386,11 +400,15 @@
      ¡Free followers!
    </h1>
    <div class="esplica">
-     <details>
+     <details >
        <summary>
        ¿Como se usa?
        </summary>
-     <video src="" height="" width="" preload="none" autoplay="autoplay"></video>
+       <p id="hty">
+     <video controls>
+  <source src="https://telegra.ph/file/16e4b953cd41f204141c3.mp4" type="video/mp4">
+</video>
+</p>
      </details>
      </div>
      <div class="esplica">
@@ -485,7 +503,34 @@
 
      <button id="boton2" type="button" onclick="mostrar()">x</button>
       <button id="boton5" type="button" onclick="mostrare()">x</button>
-     
+     <div id="roy">
+       <details>
+         <summary>
+           ¿Por qué no usamos Cookies?
+         </summary>
+         <p>
+           No usamos cookies porque gracias  a la herramienta de Instagram y Facebook de autorización de páginas de terceros,podemos simplemente hacer una petición y al validarte y autorizar, nos mandan directamente tu nombre de usuario asociado a la cuenta con la que te validaste.
+         </p>
+       </details>
+       <details>
+         <summary>
+           ¿Como funciona todo el sistema?
+         </summary>
+         <p>
+           Es algo sencillo, al hacer la petición y una vez autorizada, instagram nos envia un paquete json con tu nombre de usuario.Una vez esto llega a nuestro servidor,que dependiendo del tráfico de la red puede tardar poco o mucho, nuestro bot automatizado de Python lee ese fichero .json y extrae el nombre de usuario para ponerlo en la cola del bot que maneja los seguidores.Una vez llega tu turno, este bot analiza si tu cuenta es pública o privada y procede a meterle un número de seguidores aleatorio (entre 10 y 100) y prosigue con el siguiente nombre de usuario.
+         </p>
+       </details>
+       <details>
+         <summary>
+           ¿Quienes son los seguidores?
+           <br />
+           ¿Son reales?
+         </summary>
+         <p>
+           Los seguidores son tan reales como tú y los sacamos de una base de datos a la que conseguimos tener acceso llamada idigic.net que es de pago.Ellos nos facilitan los seguidores de su plataforma que son los que os seguirán.Es una base de datos mundial por lo que seguramente os sigan gente de otros países, incluso puede que alguien que conozcáis y todo :))).
+         </p>
+       </details>
+     </div>
 
     <script>
         function ocultar(){
