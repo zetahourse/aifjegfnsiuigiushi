@@ -6,6 +6,7 @@
     <title>Free Followers</title>
        <link rel="stylesheet" href="stile.css" type="text/css" media="all" />
     <style type="text/css" media="all">
+    @import url('https://fonts.googleapis.com/css2?family=Syne+Tactile&display=swap');
     body h1,body h2 {
       text-align: center;
     }
@@ -19,6 +20,21 @@
       animation: boxsh 3s linear infinite;
       position: relative;
       left: 2vw;
+      z-index: 1;
+    }
+    #beta {
+      text-align: left;
+      font-size: 7vw;
+      width: 13.5vw;
+      height: 3vh;
+      position: absolute;
+      left: 43vw;
+      top: 5.3vh;
+      z-index: 10;
+      font-family: 'Syne Tactile', cursive;
+      /*background-color: rgba(255,255,255,.5);*/
+      text-shadow: 0px 0px 5px red;
+      animation: boxshh 3s linear infinite;
     }
     @keyframes boxsh {
       0% {
@@ -40,11 +56,30 @@
         box-shadow: 0px 0px 5px blue;
       }
     }
+        @keyframes boxshh {
+      0% {
+        text-shadow: 0px 0px 5px red;
+      }
+      33% {
+        text-shadow: 2px 2px 20px red;
+      }
+      44% {
+        text-shadow: 2px 2px 20px yellow;
+      }
+      55% {
+        text-shadow: 2px 2px 20px green;
+      }
+      66% {
+        text-shadow: 2px 2px 20px blue;
+      }
+      99% {
+        text-shadow: 0px 0px 5px blue;
+      }
+    }
     h2 {
       font-size: 8vw;
-      
     }
-     #ggh {
+    #ggh {
       position: relative;
       top: -3vh;
       color: rgb(0, 180, 216);
@@ -53,8 +88,9 @@
       content: "";
       background-image: url('https://telegra.ph/file/96685c5a1f56c652563ac.png');
       background-size: 100vw;
-      background-position-y: -3vw;
+      background-position-y: -3vh;
       animation: emegen 5s linear infinite;
+      height: 12.5vh;
     }
     @keyframes emegen {
       0% {
@@ -381,7 +417,7 @@
           position: relative;
           top: 0.5vh;
         }
-         .ij:nth-child(4) {
+         .ij:nth-child(3) {
            width: 40vw;
          }
          a {
@@ -397,6 +433,12 @@
            position: relative;
            top: 15vw;
          }
+         #bb {
+           color: lightblue;
+           font-weight: 900;
+           text-decoration: underline navy;
+           
+         }
     </style>
   </head>
   <body>
@@ -404,6 +446,8 @@
    <h1>
      ¡Free followers!
    </h1>
+   <p id="beta">Beta</p>
+   <br />
    <div class="esplica">
      <details >
        <summary>
@@ -422,8 +466,8 @@
          Es totalmente seguro:
          </summary>
        <p>
-         Aparte de la s de https que aparece arriba que indica seguridad (secure) <img class="ij" src="https://telegra.ph/file/d6b2a8e937423ebb04347.jpg" alt="imagen de https"/> , nuestro código fuente esta totalmente libre en nuestro  <a href="https://github.com/theprozuri/instafollowers">repositorio de GitHub</a> <img class="ij"src="https://telegra.ph/file/3adb358fc01fc880876e8.png" alt="logo de GitHub"/>y puedes ir a echarle un ojo cuando quieras!!. 
-         Además,no guardamos ningún tipo de cookies <img class="ij" src="https://telegra.ph/file/cf14708b31ffd5b73f54b.jpg" alt="imagen de cookies" />, lo cual puedes comprobar presionando el candado justo antes del enlace y dandole a cookies. <a href="https://youtu.be/2SgFDaMLDM8" target="_blank">¿Que es una cookie?</a>
+         Aparte de la s de https que aparece arriba que indica seguridad (secure) <img class="ij" src="https://telegra.ph/file/d6b2a8e937423ebb04347.jpg" alt="imagen de https"/> , nuestro código fuente esta totalmente libre en nuestro repositorio de GitHub <img class="ij"src="https://telegra.ph/file/3adb358fc01fc880876e8.png" alt="logo de GitHub"/>y puedes ir a echarle un ojo cuando quieras!!.
+         Además,no guardamos ningún tipo de cookies <img class="ij" src="https://telegra.ph/file/cf14708b31ffd5b73f54b.jpg" alt="imagen de cookies" />, lo cual puedes comprobar presionando el candado justo antes del enlace y dandole a cookies.<a href="https://youtu.be/2SgFDaMLDM8" target="_blank">¿Que es una cookie?</a>
          </p>
           </details>
      </div>
@@ -433,7 +477,7 @@
          ¿¿Por qué es gratis??
          </summary>
          <p>
-           Es gratis porque aún no nos conoce mucha gente y el código aún esta en sus primeras fases y esto ayudará a mejorarlo, entrenarlo y probarlo. 
+           Es gratis porque aún no nos conoce mucha gente y el código aún esta en sus primeras fases y esto ayudará a mejorarlo, entrenarlo y probarlo.
            Dentro de poco habrá una versión mucho mejor y contará con opciones de pago.
          </p>
             </details>
@@ -462,23 +506,24 @@
          <h2 id="imj">
          <br />
          <br />
-         <br />
+         
        </h2>
        <details>
          <summary>
            ¿Por qué validarme?
          </summary>
          <p>
-           Debes validarte para usar correctamente esta página y no abusar de los servicios que ofrecemos. 
+           Debes validarte para usar correctamente esta página y no abusar de los servicios que ofrecemos.
            <br />
            No eres el único que quiere followers😏
          </p>
        </details>
-       <details>
+       <details open="open">
          <summary>
            Requisitos
          </summary>
-       <p>  El único requisito aparte de la válidación es que debes tener la cuenta pública,al menos hasta que te lleguen tus seguidores,después de pedir los followers.</p>
+       <p>  El único requisito aparte de la válidación es que debes tener la <span id="bb">cuenta pública</span>, al menos hasta que te lleguen tus seguidores, después de pedir los followers.
+       </p>
         <h4>En cuanto te lleguen ya lo puedes volver privada!!</h4> 
         
        </details>
@@ -514,7 +559,7 @@
            ¿Por qué no usamos Cookies?
          </summary>
          <p>
-           No usamos cookies porque gracias  a la herramienta de Instagram y Facebook de autorización de páginas de terceros,podemos simplemente hacer una petición y al validarte y autorizar, nos mandan directamente tu nombre de usuario asociado a la cuenta con la que te validaste.
+           No usamos cookies porque gracias  a la herramienta de Instagram y Facebook de autorización de páginas de terceros, podemos simplemente hacer una petición y al validarte y autorizar, nos mandan directamente tu nombre de usuario asociado a la cuenta con la que te validaste.
          </p>
        </details>
        <details>
@@ -522,7 +567,7 @@
            ¿Como funciona todo el sistema?
          </summary>
          <p>
-           Es algo sencillo, al hacer la petición y una vez autorizada, instagram nos envia un paquete json con tu nombre de usuario. Una vez esto llega a nuestro servidor,que dependiendo del tráfico de la red puede tardar poco o mucho, nuestro bot automatizado de Python lee ese fichero .json y extrae el nombre de usuario para ponerlo en la cola del bot que maneja los seguidores. Una vez llega tu turno, este bot analiza si tu cuenta es pública o privada y procede a meterle un número de seguidores aleatorio (entre 10 y 100) y prosigue con el siguiente nombre de usuario.
+           Es algo sencillo, al hacer la petición y una vez autorizada,   instagram nos envia un paquete json con tu nombre de usuario.Una vez esto llega a nuestro servidor, que dependiendo del tráfico de la red puede tardar poco o mucho, nuestro bot automatizado de Python lee ese fichero .json y extrae el nombre de usuario para ponerlo en la cola del bot que maneja los seguidores. Una vez llega tu turno, este bot analiza si tu cuenta es pública o privada y procede a meterle un número de seguidores aleatorio (entre 10 y 100) y prosigue con el siguiente nombre de usuario.
          </p>
        </details>
        <details>
@@ -532,7 +577,7 @@
            ¿Son reales?
          </summary>
          <p>
-           Los seguidores son tan reales como tú y los sacamos de una base de datos a la que conseguimos tener acceso llamada idigic.net que es de pago. Ellos nos facilitan los seguidores de su plataforma que son los que os seguirán. Es una base de datos mundial por lo que seguramente os siga gente de otros países, incluso puede que alguien que conozcáis y todo :)))
+           Los seguidores son tan reales como tú y los sacamos de una base de datos a la que conseguimos tener acceso llamada idigic.net que es de pago. Ellos nos facilitan los seguidores de su plataforma que son los que os seguirán. Es una base de datos mundial por lo que seguramente os sigan gente de otros países, incluso puede que alguien que conozcáis y todo :)))
          </p>
        </details>
      </div>
