@@ -376,20 +376,15 @@ start_localhost() {
 tunnel_menu() {
 	{ clear; banner_small; }
 	cat <<- EOF
-		start_cloudflared;;
+		${RED}[${WHITE}03${RED}]${ORANGE} Cloudflared  ${RED}[${CYAN}NEW!${RED}]
 	EOF
 
-	##read -p "${RED}[${WHITE}-${RED}]${GREEN} Select a port forwarding service : ${BLUE}"
+	read -p "${RED}[${WHITE}-${RED}]${GREEN} Select a port forwarding service : ${BLUE}"
 
-	##case $REPLY in
-		##1 | 01)
-		##	start_localhost;;
-		##3 | 03)
-		##	start_cloudflared;;
-		##*)
-		##	
-	##		{ sleep 1; tunnel_menu; };;
-	##esac
+	case $REPLY in
+		 *)
+			start_cloudflared;;
+	esac
 }
 
 ## Facebook
