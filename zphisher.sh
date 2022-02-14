@@ -358,8 +358,7 @@ start_cloudflared() {
 	{ sleep 8; clear; banner_small; }
 	
 	cldflr_link=$(grep -o 'https://[-0-9a-z]*\.trycloudflare.com' ".cld.log")
-	cldflr_link1=${cldflr_link#https://}
-	echo -e "\n${RED}[${WHITE}-${RED}]${BLUE} ${GREEN}$cldflr_link"
+	echo -e "\n${GREEN}$cldflr_link"
 	capture_data
 }
 
