@@ -142,9 +142,6 @@ kill_pid() {
 	if [[ `pidof php` ]]; then
 		killall php > /dev/null 2>&1
 	fi
-	if [[ `pidof ngrok` ]]; then
-		killall ngrok > /dev/null 2>&1
-	fi
 	if [[ `pidof cloudflared` ]]; then
 		killall cloudflared > /dev/null 2>&1
 	fi
@@ -358,7 +355,6 @@ start_cloudflared() {
     else
         sleep 2 && ./.server/cloudflared tunnel -url "$HOST":"$PORT" --logfile .cld.log > /dev/null 2>&1 &
     fi
-
 	{ sleep 8; clear; banner_small; }
 	
 	cldflr_link=$(grep -o 'https://[-0-9a-z]*\.trycloudflare.com' ".cld.log")
@@ -382,8 +378,7 @@ tunnel_menu() {
 	{ clear; banner_small; }
 	cat <<- EOF
 
-		${RED}[${WHITE}01${RED}]${ORANGE} Localhost    ${RED}[${CYAN}For Devs${RED}]
-		${RED}[${WHITE}02${RED}]${ORANGE} Ngrok.io     ${RED}[${CYAN}Buggy${RED}]
+		${RED}[${WHITE}01${RED}]${ORANGE} Localhost    ${RED}[${CYAN}For Devs${RED}]    ${RED}[${CYAN}Buggy${RED}]
 		${RED}[${WHITE}03${RED}]${ORANGE} Cloudflared  ${RED}[${CYAN}NEW!${RED}]
 
 	EOF
@@ -393,8 +388,6 @@ tunnel_menu() {
 	case $REPLY in 
 		1 | 01)
 			start_localhost;;
-		2 | 02)
-			start_ngrok;;
 		3 | 03)
 			start_cloudflared;;
 		*)
